@@ -1,0 +1,303 @@
+:root {
+    --color1: #05b1b1;
+    --color2: #52339a;
+}
+
+header,
+footer,
+section {
+    padding: 100px 0;
+}
+
+header,
+footer {
+    background: url(img/pattern.png), linear-gradient(to right, var(--color1) 0%, var(--color2) 100%);
+    background-size: contain;
+}
+
+
+.header {
+
+    padding: 200px 0;
+}
+
+.container {}
+
+.row {}
+
+.col-12 {}
+
+.text-center {}
+
+.itd_play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 30px auto;
+    transition: all 0.5s ease;
+}
+
+.itd_play:hover {
+    background-color: var(--color2);
+}
+
+.itd_triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent var(--bs-white);
+    margin-right: -3px;
+}
+
+.btn {}
+
+.btn-itd {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    background-color: var(--color2);
+    color: var(--bs-white);
+    padding: 8px 30px;
+
+}
+
+.btn-itd:hover {
+    background-color: var(--color1);
+    color: var(--bs-white);
+}
+
+
+
+.btn-lg {}
+
+.text-uppercase {}
+
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* секция about */
+
+.about {
+    background-color: #eee;
+}
+
+
+.color1 {
+    color: var(--color1);
+}
+
+.color2 {
+    color: var(--color2);
+}
+
+.bg1 {
+    background-color: var(--color1);
+}
+
+.bg2 {
+    background-color: var(--color2);
+}
+
+.about-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+
+
+.itd_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border: 3px solid var(--color2);
+    border-radius: 50% ;
+    margin: 0px auto 15px;
+}
+
+.about-title {
+    margin-top: 20px;
+    font-size: 25px;
+  
+}
+.line {
+    width: 100px;
+    height: 3px;
+    background-color: var(--color1);
+    margin: 15px auto 30px;
+}
+
+.about-icon {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+
+
+/* секция forwhom */
+
+.forwhom-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.forwhom-item {
+    border: 3px solid var(--color1);
+    
+    padding: 50px;
+ 
+    margin: 10px;
+
+    width: calc(50% - 20px);
+    min-width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* секция schedule программы курса */
+.schedule {
+    background-color: #eee;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-white);
+    background-color: var(--color2);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: rotate(180deg);
+}
+
+
+/* секция learning */
+
+
+.learning-text {
+    border: 3px solid var(--color1);
+    padding: 25px;
+}
+
+.learning-text p {
+    font-weight: 500;
+}
+
+
+
+.learning-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.learning-img {
+    padding-left: 30px;
+    
+}
+
+/* секция author */
+
+.author {
+    background-color: #eee;
+    padding-bottom: 0;
+}
+
+.itd_img {
+    max-width: 260px;
+}
+
+
+
+/* секция reviews */
+
+.reviews_img {
+    border: 3px solid var(--color1);
+    border-radius: 50%;
+}
+
+.reviews-text p {
+    max-width: 419px;
+    width: 100%;
+}
+
+.reviews-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews-line {
+    background-color: var(--color2);
+}
+
+
+/* секция buy */
+
+.buy {
+    background-color: #eee;
+}
+
+
+/* footer */
+.footer {
+    margin: 0;
+    padding: 25px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+.footer-items {
+    display: flex;
+    gap: 0 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-item {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 7px 10px;
+}
+
+.footer-item:hover {
+    background-color: #fff;
+    
+}
+
